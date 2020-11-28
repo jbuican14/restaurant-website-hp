@@ -1,0 +1,6 @@
+#others
+/.vscode/
+
+
+#dependencies
+/node_modules

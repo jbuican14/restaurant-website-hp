@@ -1,0 +1,64 @@
+//reusable
+.logo {
+  font-size: 7rem;
+  color: $COLOR_PRIMARY;
+  width: 11rem;
+  height: 11rem;
+  border: 0.3rem solid $COLOR_PRIMARY;
+  border-radius: 50%;
+  margin: 0 2rem 0 0;
+  @include flexLayout;
+}
+
+.main-name {
+  font-family: $FONT_KALAM;
+  font-size: 5rem;
+  color: $COLOR_SECONDARY;
+  @include textStyle;
+}
+
+.sub-name {
+  font-family: $FONT_KALAM;
+  font-size: 1.8rem;
+  text-align: center;
+  border-top: 0.1rem solid $COLOR_WHITE;
+  padding-top: 0.2rem;
+  @include textStyle;
+}
+
+.main-heading {
+  font-family: $FONT_DANCING;
+  font-size: 10rem;
+  font-weight: 300;
+  color: $COLOR_PRIMARY;
+  margin: 0 0 3rem 0;
+}
+
+.sub-heading {
+  font-family: $FONT_KALAM;
+  font-size: 6rem;
+  font-weight: 300;
+  color: $COLOR_SECONDARY;
+  margin: 0 0 4rem 0;
+}
+
+.main-btn {
+  width: 17rem;
+  height: 4.5rem;
+  font-family: $FONT_KALAM;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: $COLOR_PRIMARY;
+  background-color: transparent;
+  border: 0.1rem solid $COLOR_PRIMARY;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: $COLOR_PRIMARY;
+    color: $COLOR_DARK;
+    // box-shadow: 0 0 0.4s rgba($COLOR_WHITE, 0.9);
+  }
+}

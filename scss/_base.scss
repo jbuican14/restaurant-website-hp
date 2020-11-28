@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+$COLOR_DARK: #262626;
+$COLOR_BLACK: #000;
+$COLOR_WHITE: #ffffff;
+$COLOR_PRIMARY: #ff9800;
+$COLOR_SECONDARY: #43aeb9; // #da6b27;
+
+$FONT_KALAM: 'Kalam', cursive;
+$FONT_NERKO: 'Nerko One', cursive;
+$FONT_DANCING: 'Dancing Script', cursive;
+
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin textStyle {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $COLOR_DARK;
+}
